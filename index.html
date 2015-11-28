@@ -21,6 +21,7 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="bootbox.js"></script>
     <script src="modal_content.js"></script>
+    <script src="content_object_dictionary.js"></script>
 </head>
 
 <body>
@@ -31,7 +32,7 @@
             <div id="terms_banner">
                 <a class="white" href="https://github.com/lawpatch">Github Repos</a> |
                 <a class="white" href="https://twitter.com/lawpatch">Twitter</a> |
-                <a class="white" target="_blank" style="left:10px;" href="https://github.com/lawpatch/lawpatch-terms/blob/master/terms.md"
+                <a class="white" style="left:10px;" href="https://github.com/lawpatch/lawpatch-terms/blob/master/terms.md"
                 target="_blank">Terms of Use</a>
             </div>
 
@@ -44,7 +45,6 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
         <section id="main_content" class="inner">
-            <a class="alert">YEP</a>
             <p>LawPatch is a collection of open source legal language that is linked
                 into contracts with a URL.</p>
 
@@ -103,15 +103,8 @@ Getting Started
                 changes to the language, so there will be unintended consequences
                 if you do this.
             </p>
-            <p>
 
-                [Click here for United States Language](internal) [Click here for United Kingdom
-                Language](internal) [Click here for Australian Language](internal)
-            </p>
-
-
-
-
+            <h4>United States</h4>
             <table>
                 <tr>
                     <th>Area</th>
@@ -119,7 +112,62 @@ Getting Started
                     <th>Current</th>
                 </tr>
 
-                <h4>Australia</h4>
+                <tr>
+                    <td rowspan="2">General Provisions</td>
+                    <td>End of agreement boilerplate</td>
+                    <td id="us-boilerplate"></td>
+                </tr>
+                <tr>
+                    <td>Interpretation provisions for an agreement</td>
+                    <td id="us-interpretation"></td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Limitation of Liability</td>
+                    <td>(DRAFTING) Limit liability as much as the law allows</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>(DRAFTING) Limitation of liability to a specified amount</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>(DRAFTING) Limiting liability for consequential loss only</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>(DRAFTING) Not limiting liability at all</td>
+                    <td>N/A</td>
+                </tr>
+            </table>
+
+            <h4>United Kingdom</h4>
+            <table>
+                <tr>
+                    <th>Area</th>
+                    <th>Purpose</th>
+                    <th>Current</th>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">General Provisions</td>
+                    <td>End of agreement boilerplate</td>
+                    <td id="uk-boilerplate"></td>
+                </tr>
+                <tr>
+                    <td>Interpretation provisions for an agreement</td>
+                    <td id="uk-interpretation"></td>
+                </tr>
+
+            </table>
+
+            <h4>Australia</h4>
+            <table>
+                <tr>
+                    <th>Area</th>
+                    <th>Purpose</th>
+                    <th>Current</th>
+                </tr>
+
                 <tr>
                     <td rowspan="2">General Provisions</td>
                     <td>End of agreement boilerplate</td>
@@ -131,135 +179,30 @@ Getting Started
                 </tr>
                 <tr>
                     <td rowspan="2">Intellectual Property</td>
-                    <td>Transfer ownership of intellectual property</td>
-                    <td>Use / Info / Read</td>
+                    <td>(DRAFT) Transfer ownership of intellectual property</td>
+                    <td id="au-ip_transfer"></td>
                 </tr>
                 <tr>
-                    <td>License intellectual property</td>
-                    <td>Use / Info / Read</td>
+                    <td>(DRAFT) License intellectual property</td>
+                    <td id="au-license_ip"></td>
                 </tr>
                 <tr>
                     <td rowspan="4">Limitation of Liability</td>
                     <td>Limit liability as much as the law allows</td>
-                    <td>Use / Info / Read</td>
+                    <td id="au-limitation-0"></td>
                 </tr>
                 <tr>
                     <td>Limitation of liability to a specified amount</td>
-                    <td>Use / Info / Read</td>
+                    <td id="au-limitation-1"></td>
                 </tr>
                 <tr>
                     <td>Limiting liability for consequential loss only</td>
-                    <td>Use / Info / Read</td>
+                    <td id="au-limitation-2"></td>
                 </tr>
                 <tr>
                     <td>Not limiting liability at all</td>
-                    <td>Use / Info / Read</td>
+                    <td id="au-limitation-3"></td>
                 </tr>
-                <!--<tr>-->
-                <!--<td>United States</td>-->
-                <!--<td class="repoName">us-boilerplate</td>-->
-                <!--<td>Sensible end document boilerplate for United States legal agreements.</td>-->
-                <!--<td><a href="https://github.com/lawpatch/us-boilerplate/blob/15815df11bd0da74d61f6df85cec6bd365c088df/us-boilerplate.md"-->
-                <!--class="read-link" target="_blank">Read</a>-->
-                <!--/ <a href="#" class="get-link">Get</a>-->
-                <!--</td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                <!--<td>United States</td>-->
-                <!--<td>us-interpretation</td>-->
-                <!--<td>Sensible interpretation provisions for United States legal-->
-                <!--agreements.-->
-                <!--</td>-->
-                <!--<td><a href="https://github.com/lawpatch/us-interpretation/blob/a8e60fa226fdc1b360438787ed11321b1f0af29e/us-interpretation.md"-->
-                <!--class="read-link" target="_blank">Read</a>-->
-                <!--/ <a href="#" class="get-link">Get</a>-->
-                <!--</td>-->
-                <!--</tr>-->
-
-            </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <table>
-                <tr>
-                    <th>Jurisdiction</th>
-                    <th>Title</th>
-                    <th>Purpose</th>
-                    <th>Current</th>
-                </tr>
-
-
-                <!--UNITED STATES -->
-                <tr>
-                    <td>United States</td>
-                    <td class="repoName">us-boilerplate</td>
-                    <td>Sensible end document boilerplate for United States legal agreements.</td>
-                    <td><a href="https://github.com/lawpatch/us-boilerplate/blob/15815df11bd0da74d61f6df85cec6bd365c088df/us-boilerplate.md"
-                        class="read-link" target="_blank">Read</a>
-                        / <a href="#" class="get-link">Get</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>United States</td>
-                    <td>us-interpretation</td>
-                    <td>Sensible interpretation provisions for United States legal
-                        agreements.
-                    </td>
-                    <td><a href="https://github.com/lawpatch/us-interpretation/blob/a8e60fa226fdc1b360438787ed11321b1f0af29e/us-interpretation.md"
-                        class="read-link" target="_blank">Read</a>
-                        / <a href="#" class="get-link">Get</a>
-                    </td>
-                </tr>
-
-
-                <!--UNITED KINGDOM-->
-                <tr>
-                    <td>United Kingdom</td>
-                    <td>uk-boilerplate</td>
-                    <td>Sensible end document boilerplate for UK legal agreements.</td>
-                    <td><a href="https://github.com/lawpatch/uk-boilerplate/blob/1c32ec99f0c4d7909038de8c3f51c2a0f4d7f940/sensible-boilerplate.md"
-                        class="read-link" target="_blank">Read</a>
-                        / <a href="#" class="get-link">Get</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>United Kingdom</td>
-                    <td>uk-interpretation</td>
-                    <td>Sensible interpretation provisions for UK legal agreements.</td>
-                    <td><a href="https://github.com/lawpatch/uk-interpretation/blob/8b380df692eff58bfe2fea3b57414ea93617b800/uk-interpretation.md"
-                        class="read-link" target="_blank">Read</a>
-                        / <a href="#" class="get-link">Get</a>
-                    </td>
-                </tr>
-
-
-                <!--AUSTRALIA-->
-                <tr>
-                    <td>Australia</td>
-                    <td>au-boilerplate</td>
-                    <td>Sensible end document boilerplate for Australian legal agreements.</td>
-                    <td>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Australia</td>
-                    <td>au-interpretation</td>
-                    <td>Sensible interpretation provisions for Australian legal agreements.</td>
-                    <td><a href="" class="read-link" target="_blank">Read</a>
-                        / <a href="#" class="get-link">Get</a> 
-                    </td>
-                </tr>
-
 
             </table>
 
