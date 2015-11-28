@@ -15,29 +15,25 @@
         $(document).ready(function()
         {
             mixpanel.track('page load')
-            $('.get-link').click(function()
-            {
-                event.preventDefault()
-                var link = event.target
-                link = $(link).prev()[0].href
-                mixpanel.track(link)
-                var tableRow = $(event.target).closest('tr')
-                var see = $(tableRow).after(
-                    '<tr><td colspan=4><textarea rows=2' +
-                    ' style="width:96%;padding:10px;font-size:10px;">The parties agree to the terms and conditions in the version of the text at ' +
-                    link +
-                    ' only (not to any amendments).</textarea></td></tr>'
-                )
-                var newRow = $(tableRow).next()[0]
-                var input = $(newRow).find('textarea')
-                $(input).focus().select()
-
-            })
         });
     </script>
+
+    <!--Bootbox dependencies-->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootbox.js"></script>
+    <script src="modal_content.js"></script>
+
     <style type="text/css" media="">
         .bold {
             font-weight: bold;
+        }
+        .cancel {
+            float: right;
+        }
+        .bootbox-close-button{
+        
+            float: right;
         }
         .underline {
             text-decoration: underline;
@@ -88,8 +84,9 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
         <section id="main_content" class="inner">
-            <p>LawPatch is a collection of open source legal language that can be
-                linked into contracts with a URL linking very simple clauses.</p>
+            <a class="alert">YEP</a>
+            <p>LawPatch is a collection of open source legal language that is linked
+                into contracts with a URL.</p>
 
             <p>Using LawPatch shortens documents and makes them easier to understand
                 for non lawyers. We are also using LawPatch to create a layer of
@@ -152,6 +149,90 @@ Getting Started
                 Language](internal) [Click here for Australian Language](internal)
             </p>
 
+
+
+
+            <table>
+                <tr>
+                    <th>Area</th>
+                    <th>Purpose</th>
+                    <th>Current</th>
+                </tr>
+
+                <h4>Australia</h4>
+                <tr>
+                    <td rowspan="2">General Provisions</td>
+                    <td>End of agreement boilerplate</td>
+                    <td><a href="https://github.com/lawpatch/au-boilerplate/blob/d5f1348ff82b3e90b96d78a5ba1225367318c42e/sensible-boilerplate.md"
+                        class="read-link" target="_blank">Read</a>
+                        / <a href="#" class="get-link">Get</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Interpretation provisions for an agreement</td>
+                    <td>Use / Info / Read</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Intellectual Property</td>
+                    <td>Transfer ownership of intellectual property</td>
+                    <td>Use / Info / Read</td>
+                </tr>
+                <tr>
+                    <td>License intellectual property</td>
+                    <td>Use / Info / Read</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Limitation of Liability</td>
+                    <td>Limit liability as much as the law allows</td>
+                    <td>Use / Info / Read</td>
+                </tr>
+                <tr>
+                    <td>Limitation of liability to a specified amount</td>
+                    <td>Use / Info / Read</td>
+                </tr>
+                <tr>
+                    <td>Limiting liability for consequential loss only</td>
+                    <td>Use / Info / Read</td>
+                </tr>
+                <tr>
+                    <td>Not limiting liability at all</td>
+                    <td>Use / Info / Read</td>
+                </tr>
+                <!--<tr>-->
+                <!--<td>United States</td>-->
+                <!--<td class="repoName">us-boilerplate</td>-->
+                <!--<td>Sensible end document boilerplate for United States legal agreements.</td>-->
+                <!--<td><a href="https://github.com/lawpatch/us-boilerplate/blob/15815df11bd0da74d61f6df85cec6bd365c088df/us-boilerplate.md"-->
+                <!--class="read-link" target="_blank">Read</a>-->
+                <!--/ <a href="#" class="get-link">Get</a>-->
+                <!--</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td>United States</td>-->
+                <!--<td>us-interpretation</td>-->
+                <!--<td>Sensible interpretation provisions for United States legal-->
+                <!--agreements.-->
+                <!--</td>-->
+                <!--<td><a href="https://github.com/lawpatch/us-interpretation/blob/a8e60fa226fdc1b360438787ed11321b1f0af29e/us-interpretation.md"-->
+                <!--class="read-link" target="_blank">Read</a>-->
+                <!--/ <a href="#" class="get-link">Get</a>-->
+                <!--</td>-->
+                <!--</tr>-->
+
+            </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
             <table>
                 <tr>
                     <th>Jurisdiction</th>
@@ -210,9 +291,7 @@ Getting Started
                     <td>Australia</td>
                     <td>au-boilerplate</td>
                     <td>Sensible end document boilerplate for Australian legal agreements.</td>
-                    <td><a href="https://github.com/lawpatch/au-boilerplate/blob/d5f1348ff82b3e90b96d78a5ba1225367318c42e/sensible-boilerplate.md"
-                        class="read-link" target="_blank">Read</a>
-                        / <a href="#" class="get-link">Get</a> 
+                    <td>
                     </td>
                 </tr>
                 <tr>
@@ -251,7 +330,8 @@ Getting Started
             <p>Here’s an [article on how LawPatch evolved](http://blog.codepact.com),
                 and how it works.</p>
             <p>LawPatch is also in the beginnings of creating an open source dictionary
-                [here](https://github.com/lawpatch/dictionary).</p>
+                [here](https://github.com/lawpatch/dictionary).
+            </p>
             <h3>Be Careful</h3> 
             <p>
                 The legal language referred to on this page is not legal advice, and the people
