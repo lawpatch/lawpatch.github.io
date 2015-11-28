@@ -15,6 +15,7 @@ $(document).ready(function() {
         var selector = '#' + key
         $(selector).replaceWith("<td><a href='" + content[key].link + "' class='read' target='_blank' name=" + key + ">Read</a> / <a href='#' name=" + key + " class='get'>Get</a>")
     })
+    $("a").attr("target","_blank");
 });
 
 // Produce the modal from the global object called "content"

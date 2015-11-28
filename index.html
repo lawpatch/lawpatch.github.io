@@ -22,6 +22,19 @@
     <script src="bootbox.js"></script>
     <script src="modal_content.js"></script>
     <script src="content_object_dictionary.js"></script>
+
+    <!--Precedence styles-->
+    <style type="text/css" media="">
+        td {
+            padding: 10px;
+        }
+        table {
+            width: 100%;
+        }
+        th {
+            padding: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -30,14 +43,14 @@
     <div id="header_wrap" class="outer">
         <header class="inner">
             <div id="terms_banner">
-                <a class="white" href="https://github.com/lawpatch">Github Repos</a> |
-                <a class="white" href="https://twitter.com/lawpatch">Twitter</a> |
+                <a class="white" href="https://github.com/lawpatch" target="_blank">Github Repos</a> |
+                <a class="white" href="https://twitter.com/lawpatch" target="_blank">Twitter</a> |
                 <a class="white" style="left:10px;" href="https://github.com/lawpatch/lawpatch-terms/blob/master/terms.md"
                 target="_blank">Terms of Use</a>
             </div>
 
             <h1 id="project_title">LawPatch</h1>
-            <h2 id="project_tagline">Open source language for legal instruments.</h2>
+            <h2 id="project_tagline">Open source language for legal instruments</h2>
 
         </header>
     </div>
@@ -80,7 +93,6 @@ Getting Started
 </h3>
 
             <p>Using a patch is easy. There are three steps:</p>
-
             <ul>
                 <li>Choose the patch you want to use from the tables below;</li>
                 <li>click “Get” to display the text used to import the patch; and</li>
@@ -104,14 +116,11 @@ Getting Started
                 if you do this.
             </p>
 
-            <h4>United States</h4>
             <table>
-                <tr>
-                    <th>Area</th>
-                    <th>Purpose</th>
-                    <th>Current</th>
-                </tr>
 
+                <tr>
+                    <th colspan=3>United States</th>
+                </tr>
                 <tr>
                     <td rowspan="2">General Provisions</td>
                     <td>End of agreement boilerplate</td>
@@ -138,16 +147,9 @@ Getting Started
                     <td>(DRAFTING) Not limiting liability at all</td>
                     <td>N/A</td>
                 </tr>
-            </table>
-
-            <h4>United Kingdom</h4>
-            <table>
                 <tr>
-                    <th>Area</th>
-                    <th>Purpose</th>
-                    <th>Current</th>
+                    <th colspan=3>United Kingdom</th>
                 </tr>
-
                 <tr>
                     <td rowspan="2">General Provisions</td>
                     <td>End of agreement boilerplate</td>
@@ -158,14 +160,8 @@ Getting Started
                     <td id="uk-interpretation"></td>
                 </tr>
 
-            </table>
-
-            <h4>Australia</h4>
-            <table>
                 <tr>
-                    <th>Area</th>
-                    <th>Purpose</th>
-                    <th>Current</th>
+                    <th colspan=3>Australia</th>
                 </tr>
 
                 <tr>
@@ -223,15 +219,11 @@ Getting Started
 
             <h3>More Info</h3>
             <p>We use Github.com to host the language for LawPatch. For an explanation
-                on the versioning system used for the language, check [this](docs)
-                out.
+                on the versioning system used for the language, check <a href="https://github.com/lawpatch/lawpatch-docs/blob/master/versioning.md">this</a> out.</p>
+            <p>Here’s an <a href="http://blog.codepact.com/lawpatch/">article on how LawPatch evolved</a> and how it works.</p>
+            <p>LawPatch is also in the beginnings of creating an open source dictionary <a href="https://github.com/lawpatch/dictionary">here</a>.
             </p>
-            <p>Here’s an [article on how LawPatch evolved](http://blog.codepact.com),
-                and how it works.</p>
-            <p>LawPatch is also in the beginnings of creating an open source dictionary
-                [here](https://github.com/lawpatch/dictionary).
-            </p>
-            <h3>Be Careful</h3> 
+            <h3>Be Careful</h3>
             <p>
                 The legal language referred to on this page is not legal advice, and the people
                 working on it are not your lawyers.
