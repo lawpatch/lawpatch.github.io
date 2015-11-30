@@ -1,7 +1,7 @@
 bootBoxFactory = function(mc) {
     var title = mc.country + ' - ' + mc.title
-    var template = "{{parameterExplanation}}<br><br><div><textarea id='copy-text' rows=10 style='width:96%;padding:10px;font-size:14px;'>{{copyText}}.</textarea></div>"
-    message = template.replace(/{{country}}/, mc.country).replace(/{{copyText}}/, mc.copyText).replace(/{{parameterExplanation}}/, mc.parameterExplanation).replace(/{{url}}/, mc.link)
+    var template = "{{parameterExplanation}}<br><br><p><b>Example</p></b><div class='clause-card'>{{markRendered}}</div><div><p><b>Raw Text (Markdown)</b></p><textarea id='copy-text' rows=5 style='width:96%;padding:10px;font-size:14px;'>{{copyText}}</textarea></div>"
+    message = template.replace(/{{country}}/, mc.country).replace(/{{copyText}}/g, mc.copyText).replace(/{{parameterExplanation}}/, mc.parameterExplanation).replace(/{{markRendered}}/, marked(mc.copyText)).replace(/{{url}}/g, mc.link)
     return {
         title: title,
         message: message
