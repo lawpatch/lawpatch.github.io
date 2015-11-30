@@ -25,4 +25,5 @@ $(document).on("click", ".get", function(e) {
     var options = bootBoxFactory(content[moduleName])
     bootbox.dialog(options)
     $("#copy-text").focus().select()
+    $("a").attr("target", "_blank");
 });
