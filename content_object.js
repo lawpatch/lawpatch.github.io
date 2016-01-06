@@ -63,19 +63,19 @@ content = {
     // Intellectual Property
 
     "au-ip_transfer": {
-        link: "https://github.com/lawpatch/au-ip_transfer/blob/master/au-ip_transfer.md",
+        link: "https://github.com/lawpatch/au-ip_transfer/blob/46c52f352f77b06a3f655cc11b0f68bb4ba72630/au-ip_transfer.md",
         country: "Australia",
         title: "Transfer ownership of intellectual property",
-        copyText: "[This patch is still in draft]",
-        parameterExplanation: "[This patch is still in draft]"
+        copyText: "{Assignor} [transfers ownership of intellectual property rights]({{url}}) in the {Code} to {Assignee}.",
+        parameterExplanation: "This patch assumes the existence of information! Don't just copy and paste, fill it in!"
     },
 
     "au-license_ip": {
-        link: "www.example.com",
+        link: "https://github.com/lawpatch/au-ip_license/blob/5a7f77c72443475d8d34fc0487547dfac0671287/au-license_ip.md",
         country: "Australia",
         title: "License intellectual property",
-        copyText: "[This patch is still in draft]",
-        parameterExplanation: "[This patch is still in draft]"
+        copyText: "{Licensor} [grants a licence]({{url}}) to the {Licensee} to deal with the {Subject} for {Purpose}.",
+        parameterExplanation: "This patch assumes the existence of information! Don't just copy and paste, fill it in!"
     },
 
     // Limitation Provisions
