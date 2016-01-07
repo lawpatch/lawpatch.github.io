@@ -63,7 +63,7 @@ content = {
     // Intellectual Property
 
     "au-ip_transfer": {
-        link: "https://github.com/lawpatch/au-ip_transfer/blob/46c52f352f77b06a3f655cc11b0f68bb4ba72630/au-ip_transfer.md",
+        link: "https://github.com/lawpatch/au-ip_transfer/blob/6d7ad28f3d20fc058b656424a0a5836398ce736f/au-ip_transfer.md",
         country: "Australia",
         title: "Transfer ownership of intellectual property",
         copyText: "{Assignor} [transfers ownership of intellectual property rights]({{url}}) in the {Code} to {Assignee}.",
