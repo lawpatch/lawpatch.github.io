@@ -71,7 +71,7 @@ content = {
     },
 
     "au-license_ip": {
-        link: "https://github.com/lawpatch/au-ip_license/blob/5a7f77c72443475d8d34fc0487547dfac0671287/au-license_ip.md",
+        link: "https://github.com/lawpatch/au-ip_license/blob/bb178c5e86fec053f249c72cb4d6cd56af88825b/au-license_ip.md",
         country: "Australia",
         title: "License intellectual property",
         copyText: "{Licensor} [grants a licence]({{url}}) to the {Licensee} to deal with the {Subject} for {Purpose}.",
