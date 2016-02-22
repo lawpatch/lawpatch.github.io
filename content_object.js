@@ -20,6 +20,38 @@ content = {
         copyText: "The parties agree to the provisions in the [interpretation provisions]({{url}}).",
         parameterExplanation: "This patch doesn't assume the existence of any information in the provision doing the importation.  Just copy and paste!"
     },
+
+    // Limitation Provisions
+
+    "us-limitation-0": {
+        link: "https://github.com/lawpatch/us-limitation/blob/df4f935cf5b84432aabfcae3b833768bebcf5493/us-limitation-0.md",
+        country: "United States",
+        title: "Limit liability as much as the law allows",
+        copyText: "{Limiting Party} [limits liability as much as the law allows]({{url}}) to {Limited Party} for the {Liability Subject}.",
+        parameterExplanation: "This patch assumes the existence of information! Don't just copy and paste, fill it in!"
+    },
+    "us-limitation-1": {
+        link: "https://github.com/lawpatch/us-limitation/blob/df4f935cf5b84432aabfcae3b833768bebcf5493/us-limitation-1.md",
+        country: "United States",
+        title: "Limitation of liability to a specified amount",
+        copyText: "{Limiting Party} [limits liability as much as the law allows]({{url}}) to {Limited Party} to {Amount} for the {Liability Subject}",
+        parameterExplanation: "This patch assumes the existence of information! Don't just copy and paste, fill it in!"
+    },
+    "us-limitation-2": {
+        link: "https://github.com/lawpatch/us-limitation/blob/df4f935cf5b84432aabfcae3b833768bebcf5493/us-limitation-2.md",
+        country: "United States",
+        title: "Limiting liability for consequential loss only",
+        copyText: "{Limiting Party} [limits consequential loss as much as the law allows]({{url}}) to {Limited Party} for the {Liability Subject}.",
+        parameterExplanation: "This patch assumes the existence of information! Don't just copy and paste, fill it in!"
+    },
+    "us-limitation-3": {
+        link: "https://github.com/lawpatch/us-limitation/blob/df4f935cf5b84432aabfcae3b833768bebcf5493/us-limitation-3.md",
+        country: "United States",
+        title: "Not limiting liability at all",
+        copyText: "{Limiting Party} [covers all liabilities incurred]({{url}}) by {Limited Party} from {Liability Subject}.",
+        parameterExplanation: "This patch assumes the existence of information! Don't just copy and paste, fill it in!"
+    },
+
     // UNITED KINGDOM
 
     // General Provisions
