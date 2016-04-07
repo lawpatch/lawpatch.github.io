@@ -113,28 +113,28 @@ content = {
     // Limitation Provisions
 
     "au-limitation-0": {
-        link: "https://github.com/lawpatch/au-limitation/blob/90bb197e3299a4025af8c3db50e33b3f291e66a2/au-limitation-0.md",
+        link: "https://github.com/lawpatch/au-limitation/blob/60ca67dd1644bc284a82c22d25db3e5f56bc41b8/au-limitation-0.md",
         country: "Australia",
         title: "Limit liability as much as the law allows",
         copyText: "{Limiting Party} [limits liability as much as the law allows]({{url}}) to {Limited Party} for the {Liability Subject}, including liabilities caused by:\n\n- {risk 1};\n- {risk 2}; and\n- {risk 3}.",
         parameterExplanation: "This patch assumes the existence of information! Don't just copy and paste, fill it in!"
     },
     "au-limitation-1": {
-        link: "https://github.com/lawpatch/au-limitation/blob/90bb197e3299a4025af8c3db50e33b3f291e66a2/au-limitation-1.md",
+        link: "https://github.com/lawpatch/au-limitation/blob/60ca67dd1644bc284a82c22d25db3e5f56bc41b8/au-limitation-1.md",
         country: "Australia",
         title: "Limitation of liability to a specified amount",
         copyText: "{Limiting Party} [limits liability as much as the law allows]({{url}}) to {Limited Party} to {Amount} for the {Liability Subject}, including liabilities caused by:\n\n- {risk 1};\n- {risk 2}; and\n- {risk 3}.",
         parameterExplanation: "This patch assumes the existence of information! Don't just copy and paste, fill it in!"
     },
     "au-limitation-2": {
-        link: "https://github.com/lawpatch/au-limitation/blob/90bb197e3299a4025af8c3db50e33b3f291e66a2/au-limitation-2.md",
+        link: "https://github.com/lawpatch/au-limitation/blob/60ca67dd1644bc284a82c22d25db3e5f56bc41b8/au-limitation-2.md",
         country: "Australia",
         title: "Limiting liability for consequential loss only",
         copyText: "{Limiting Party} [limits consequential loss as much as the law allows]({{url}}) to {Limited Party} for the {Liability Subject}, including liabilities caused by:\n\n- {risk 1};\n- {risk 2}; and\n- {risk 3}.",
         parameterExplanation: "This patch assumes the existence of information! Don't just copy and paste, fill it in!"
     },
     "au-limitation-3": {
-        link: "https://github.com/lawpatch/au-limitation/blob/90bb197e3299a4025af8c3db50e33b3f291e66a2/au-limitation-3.md",
+        link: "https://github.com/lawpatch/au-limitation/blob/60ca67dd1644bc284a82c22d25db3e5f56bc41b8/au-limitation-3.md",
         country: "Australia",
         title: "Not limiting liability at all",
         copyText: "{Limiting Party} [covers all liabilities incurred]({{url}}) by {Limited Party} from {Liability Subject}, including liabilities caused by:\n\n- {risk 1};\n- {risk 2}; and\n- {risk 3}.",
